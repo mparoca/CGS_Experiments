@@ -1,0 +1,16 @@
+conda create -n pd_simulation python=3.9
+conda activate pd_simulation
+pip install --upgrade pip
+pip install langchain
+pip install transformers
+pip install faiss-cpu
+pip install datasets
+pip install accelerate
+pip install langgraph
+pip install wikipedia
+pip install pandas
+pip install networkx
+pip install matplotlib
+pip install huggingface_hub
+pip install torch
+
