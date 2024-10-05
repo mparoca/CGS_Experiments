@@ -14,4 +14,7 @@ pip install matplotlib
 pip install huggingface_hub
 huggingface-cli login
 pip install torch
+pip install -U langchain-community
+pip install chromadb
+
 
