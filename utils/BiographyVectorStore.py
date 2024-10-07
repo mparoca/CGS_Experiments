@@ -107,6 +107,14 @@ def retrieve_vector_store(vector_store_dir, embeddings):
     """Retrieves the vector store with the embedding function from the persisted directory."""
     return Chroma(persist_directory=vector_store_dir, embedding_function=embeddings)
 
+# Run the code
+if __name__ == "__main__":
+    names = ["Stev Jobs", "Jane Goodall", "Barack Obama"]
+    scraped_data_dir = os.path.join(os.path.dirname(os.getcwd()), 'data/scraped')
+    vector_store_dir = os.path.join(os.path.dirname(os.getcwd()), 'data/vector_store')
+
+    biography_store = BiographyVectorStore(scraped_data_dir, vector_store_dir)
+    biography_store.run(names)
 
 # Example usage
 
