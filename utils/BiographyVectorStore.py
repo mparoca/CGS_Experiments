@@ -60,7 +60,7 @@ class BiographyVectorStore:
     def get_biography(self, name):
         """Fetches the biography of a person from Wikipedia."""
         try:
-            content = wikipedia.page(name).content
+            content = wikipedia.page(name, auto_suggest=False).content
             print(f"Successfully fetched biography for {name}.")
             # Optionally, print the first 100 characters of the biography
             print(f"Snippet: {content[:100]}...\n")
