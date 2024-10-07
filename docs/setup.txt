@@ -16,5 +16,8 @@ huggingface-cli login
 pip install torch
 pip install -U langchain-community
 pip install chromadb
-
-
+pip install langchain-openai
+pip install python-dotenv
+pip install -U langchain-community tavily-python
+pip install -U langchain-huggingface
+pip install -U langchain-chroma
