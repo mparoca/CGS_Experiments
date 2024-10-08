@@ -109,7 +109,7 @@ def retrieve_vector_store(vector_store_dir, embeddings):
 
 # Run the code
 if __name__ == "__main__":
-    names = ["Stev Jobs", "Jane Goodall", "Barack Obama"]
+    names = ["Mark Zuckerberg", "Jane Goodall", "Barack Obama", "Elon Musk", "Kim Kardashian", "Benjamin Netanyahu", "Pope Francis", "Nelson Mandela", "Kanye West", "Harvey Weinstein"]  # Add more names as needed
     scraped_data_dir = os.path.join(os.path.dirname(os.getcwd()), 'data/scraped')
     vector_store_dir = os.path.join(os.path.dirname(os.getcwd()), 'data/vector_store')
 
